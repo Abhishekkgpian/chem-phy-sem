@@ -1,13 +1,15 @@
+
 /* @keyframes animated_background {
     0%   {background-image: url(./hand\ arrow.webp);}
     25%  {background-image: url(../new\ dp.png);}
     50%  {background-image:url(./hand\ arrow.webp) ;}
     100% {background-image: url(./hand\ arrow.webp);}
   } */
-*{
+  *{
     margin: 0;
     padding: 0;
-    /* background-color: black; */
+    /* background-color: black;  */
+    z-index: 0.5;
 }
 .burger{
     display: none;
@@ -28,6 +30,18 @@ cursor: pointer;
 #btn{
     display: none;
 }
+.grid-container {
+   display: none;
+   text-align: center;
+ 
+
+
+ }
+ .after_footer_hover{
+    background-color: yellow;
+  
+ }
+  
 .navbar a{
     
     color: rgb(0, 0, 0);
@@ -48,6 +62,7 @@ background-color: coral !important;
 }
 .home{
     color: aliceblue;
+    
      /* animation-name: animated_background; */
      /* animation-duration: 4s;
      animation-iteration-count: infinite;
@@ -63,7 +78,12 @@ body {
   font-size: 2.5rem;
   font-family: 'Lobster', cursive;
 }
-
+.footer{ display: block;
+    background-color: #111111;
+    text-align: center;
+    color: rgb(255, 255, 255);
+   
+}
 .wrapper {
   animation: scroll 70s linear infinite;
   background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
@@ -108,6 +128,7 @@ img{
     text-decoration: none;
     margin-left: 40%;
     margin-bottom: 10px;
+    background: transparent;
 }
 .heading{
     margin-left: 40%;
@@ -116,6 +137,7 @@ img{
     display: flex;
     flex-direction: column;
     margin-left: 40%;
+    background: transparent;
 }
 #chemsem a{
     color: greenyellow;
