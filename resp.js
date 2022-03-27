@@ -20,5 +20,21 @@
         para.style.display = 'flex';
         }
         }
+       var footer=document.getElementById('footer');
+       var contributors=document.getElementById('contributors');
+       footer.addEventListener('click',show_hide);
+      function show_hide() {
+              if (contributors.style.display!='none') { contributors.style.display='none';
+                  
+              } else {
+                contributors.style.display='block';
+              }          
+      }
+     
+           
+       
+           
+       
+           
        
 
