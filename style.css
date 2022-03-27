@@ -1,0 +1,146 @@
+/* @keyframes animated_background {
+    0%   {background-image: url(./hand\ arrow.webp);}
+    25%  {background-image: url(../new\ dp.png);}
+    50%  {background-image:url(./hand\ arrow.webp) ;}
+    100% {background-image: url(./hand\ arrow.webp);}
+  } */
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+.burger{
+    display: none;
+}
+.navbar{
+    display: flex;
+background-color: rgb(0, 158, 66);
+align-items: center;
+justify-content: center;
+position: sticky;
+top: 0;
+cursor: pointer;
+
+}
+#btn{
+    display: none;
+}
+.navbar a{
+    
+    color: rgb(0, 0, 0);
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 55px;
+    text-decoration: none;
+    font-size: 27px;
+    background-color: rgb(255, 253, 253);
+
+}
+.navbar a:hover{
+background-color: coral !important;
+
+}
+.home{
+    color: aliceblue;
+     /* animation-name: animated_background; */
+     /* animation-duration: 4s;
+     animation-iteration-count: infinite;
+    background-size: cover;
+ */}
+ @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap') repeat scroll 0 0 rgba(0, 0, 0 , 0);
+
+body {
+  background: #fff;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: 'Lobster', cursive;
+}
+
+.wrapper {
+  animation: scroll 70s linear infinite;
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  
+}
+
+@keyframes scroll {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 200s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+img{
+   width: 2em;
+  
+}
+#physem a:hover{
+    color: rgb(245, 189, 4);
+}
+#physem a{
+    color: red;
+    text-decoration: none;
+    margin-left: 40%;
+    margin-bottom: 10px;
+}
+.heading{
+    margin-left: 40%;
+}
+#chemsem{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+}
+#chemsem a{
+    color: greenyellow;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 18.5px;
+    
+}
+#chemsem a:hover{
+    color: rgb(255, 0, 255);
+}
+@media only screen and (max-width:574px){
+    .wrapper{
+        height: 120vh;
+    }
+    .v-class-resp{
+        display: none;
+        display: flex;
+        flex-direction: column;
+    }
+.navbar{ flex-direction: column;
+    display: none; 
+    
+}
+.burger{
+    display: block;
+}
+#btn{
+    display: block;
+}
+}
