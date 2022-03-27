@@ -12,6 +12,9 @@
 .burger{
     display: none;
 }
+html{
+  scroll-behavior: smooth;
+}
 .navbar{
     display: flex;
 background-color: rgb(0, 158, 66);
@@ -65,7 +68,7 @@ body {
   animation: scroll 70s linear infinite;
   background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
   color: #eee;
-  height: 100vh;
+  height: 120vh;
   min-width: 360px;
   width: 100%;
   /* display: flex; */
