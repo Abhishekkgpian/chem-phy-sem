@@ -151,7 +151,7 @@ img{
 }
 @media only screen and (max-width:574px){
     .wrapper{
-        height: 150vh;
+        height: 160vh;
     }
     .v-class-resp{
         display: none;
